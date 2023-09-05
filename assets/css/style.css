@@ -1,0 +1,231 @@
+:root {
+   /* Primary Colors */
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+   /* Neutral Colors */
+   --transparent-white : hsla(0, 0%, 100%, 0.75);
+   --very-light-gray: hsl(0, 0%, 95%);
+
+   /* Typography */
+   --body-font-b: 'Big Shoulders Display', cursive;
+   --body-font-l: 'Lexend Deca', sans-serif;
+
+   /* Font Weights */
+   --font-b: 400;
+   --font-l: 700;
+}
+
+html {
+   font-size: 18px;
+   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+   box-sizing: inherit;
+}
+
+body {
+   font-family: var(--body-font);
+}
+
+html, body {
+   min-width: 375px;
+   height: auto;
+}
+
+img, svg {
+   max-width: 100%;
+   height: auto;
+ }
+
+button {
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+p {
+   font-size: 15px;
+ }
+
+ /* Challenge Section */
+
+.preview-card {
+   padding: 60px 20px;
+   height: auto;
+}
+
+.sedans,
+.suvs,
+.luxury {
+   /* min-width: 375px; */
+   padding: 50px 45px 50px 45px;
+}
+
+/* Sedans */
+.sedans {
+   background: var(--bright-orange);
+   border-radius: 7px 7px 0 0;
+}
+
+.sedans__title {
+   /* padding: 0 20px; */
+   font-family: var(--body-font-b);
+   color: var(--transparent-white);
+   font-size: 2rem;
+}
+
+.sedans__text {
+   color: var(--transparent-white);
+   font-family: var(--body-font-l);
+   font-size: 1rem;
+   line-height: 30px;
+}
+
+.sedans__btn {
+   font-family: var(--body-font-l);
+   background-color: var(--very-light-gray);
+   color: var(--bright-orange);
+   padding: .7rem 1.5rem;
+   margin: 10px 10px 5px 0;
+   border-radius: 30px;
+   font-size: 1rem;
+   border: 3px solid var(--transparent-white);
+}
+
+.sedans__btn:hover {
+   background-color: var(--bright-orange);
+   border-color: var(--transparent-white);
+   color: var(--transparent-white);
+}
+
+/* SUVS */
+.suvs {
+   background: var(--dark-cyan);
+}
+
+.suvs__title {
+   /* padding: 40px 10px; */
+   font-family: var(--body-font-b);
+   color: var(--transparent-white);
+   font-size: 2.5rem;
+}
+
+.suvs__text {
+   /* padding: 40px 10px; */
+   color: var(--transparent-white);
+   font-family: var(--body-font-l);
+   font-size: 1rem;
+   line-height: 30px;
+}
+
+.suvs__btn {
+   font-family: var(--body-font-l);
+   background-color: var(--very-light-gray);
+   color: var(--dark-cyan);
+   padding: .7rem 1.5rem;
+   margin: 10px 10px 5px 0;
+   border-radius: 30px;
+   font-size: 1rem;
+   border: 3px solid var(--transparent-white);
+}
+
+.suvs__btn:hover {
+   background-color: var(--dark-cyan);
+   border-color: var(--transparent-white);
+   color: var(--transparent-white);
+}
+
+/* Luxury */
+.luxury {
+   background: var(--very-dark-cyan);
+   border-radius: 0 0 7px 7px;
+}
+
+.luxury__title {
+   /* padding: 40px 10px; */
+   font-family: var(--body-font-b);
+   color: var(--transparent-white);
+   font-size: 2.5rem;
+}
+
+.luxury__text {
+   /* padding: 40px 10px; */
+   color: var(--transparent-white);
+   font-family: var(--body-font-l);
+   font-size: 1rem;
+   line-height: 30px;
+}
+
+.luxury__btn {
+   font-family: var(--body-font-l);
+   background-color: var(--very-light-gray);
+   color: var(--dark-cyan);
+   padding: .7rem 1.5rem;
+   margin: 10px 10px 5px 0;
+   border-radius: 30px;
+   font-size: 1rem;
+   border: 3px solid var(--transparent-white);
+}
+
+.luxury__btn:hover {
+   background-color: var(--very-dark-cyandark-cyan);
+   border-color: var(--transparent-white);
+   color: var(--transparent-white);
+}
+
+/* Media Queries */
+@media (min-width: 1440px) {
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   .preview-card {
+      display: flex;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 110px;
+   }
+
+   .sedans,
+   .suvs,
+   .luxury {
+      max-width: 375px;
+      padding: 70px;
+   }
+
+   .sedans {
+      border-radius: 10px 0 0 10px;
+   }
+
+   .luxury {
+      border-radius: 0 10px 10px 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
