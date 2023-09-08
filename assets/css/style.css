@@ -73,7 +73,7 @@ p {
    /* padding: 0 20px; */
    font-family: var(--body-font-b);
    color: var(--transparent-white);
-   font-size: 2rem;
+   font-size: 2.5rem;
 }
 
 .sedans__text {
@@ -109,7 +109,7 @@ p {
    /* padding: 40px 10px; */
    font-family: var(--body-font-b);
    color: var(--transparent-white);
-   font-size: 2.5rem;
+   font-size: 2.5em;
 }
 
 .suvs__text {
@@ -163,7 +163,7 @@ p {
    background-color: var(--very-light-gray);
    color: var(--dark-cyan);
    padding: .7rem 1.5rem;
-   margin: 10px 10px 5px 0;
+   margin: 20px 10px 5px 0;
    border-radius: 30px;
    font-size: 1rem;
    border: 3px solid var(--transparent-white);
@@ -186,7 +186,7 @@ p {
    .preview-card {
       display: flex;
       grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 110px;
+      margin-top: 500px;
    }
 
    .sedans,
