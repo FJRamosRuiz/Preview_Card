@@ -6,11 +6,9 @@
    /* Neutral Colors */
    --transparent-white : hsla(0, 0%, 100%, 0.75);
    --very-light-gray: hsl(0, 0%, 95%);
-
    /* Typography */
    --body-font-b: 'Big Shoulders Display', cursive;
    --body-font-l: 'Lexend Deca', sans-serif;
-
    /* Font Weights */
    --font-b: 400;
    --font-l: 700;
